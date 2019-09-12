@@ -1,0 +1,22 @@
+$brand: #150923;
+$brand-alt: #2a1c53;
+$accent: #d82734;
+$background-body-light: $brand;
+$background-base-light: $brand-alt;
+$background-backdrop-light: hsla(0, 0, 0, .6);
+$text-base-light: rgba(255, 255, 255, .9);
+$text-alt-light: rgba(255, 255, 255, .6);
+$text-alt-2-light: rgba(255, 255, 255, .5);
+$border-light: rgba(255, 255, 255, 0.1);
+
+@import "partials/base";
+
+@import url('https://fonts.googleapis.com/css?family=Play:400,700&display=swap');
+
+.bold {
+    font-family: 'Play', sans-serif;
+    letter-spacing: 2px;
+    vertical-align: baseline;
+}
+
+// override base classes

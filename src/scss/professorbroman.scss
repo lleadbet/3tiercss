@@ -1,0 +1,26 @@
+$brand: #0a2a53;
+/* A channel brand color, usually dark */
+$brand-alt: #105a58;
+/* A secondary brand color, usually slightly brighter */
+$accent: #23e666;
+/* A channel accent color, usually bright */
+$background-body-light: $brand;
+$background-base-light: $brand-alt;
+$background-backdrop-light: hsla(0, 0, 0, .6);
+$text-base-light: rgba(255, 255, 255, .9);
+$text-alt-light: rgba(255, 255, 255, .6);
+$text-alt-2-light: rgba(255, 255, 255, .5);
+$border-light: rgba(255, 255, 255, 0.1);
+
+@import "partials/base";
+
+@import url('https://fonts.googleapis.com/css?family=Play:400,700&display=swap');
+
+/* Start: colors */
+
+.bold {
+    font-family: 'Play', sans-serif;
+    letter-spacing: 1px;
+    font-style: italic;
+    vertical-align: baseline;
+}

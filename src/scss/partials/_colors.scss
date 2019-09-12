@@ -1,0 +1,34 @@
+// Branding Colors
+$brand: hsl(220, 100%, 64%) !default;
+$brand-alt: hsl(220, 80%, 72%) !default;
+$accent: $brand !default;
+
+// Light Theme Colors
+$background-body-light: hsl(220, 7%, 98%) !default;
+$background-base-light: #fff !default;
+$background-alt-light: hsl(220, 7%, 94%) !default;
+$background-alt-2-light: hsl(220, 7%, 90%) !default;
+$background-backdrop-light: hsla(220, 7%, 6%, .6) !default;
+$text-base-light: hsl(220, 7%, 10%) !default;
+$text-alt-light: hsl(220, 7%, 20%) !default;
+$text-alt-2-light: hsl(220, 7%, 44%) !default;
+$border-light: hsl(220, 7%, 86%) !default;
+
+
+// Dark Mode Colors
+$background-body-dark: #000 !default;
+$background-base-dark: hsl(220, 7%, 10%) !default;
+$background-alt-dark: hsl(220, 7%, 14%) !default;
+$background-alt-2-dark: hsl(220, 7%, 20%) !default;
+$background-backdrop-dark: hsla(220, 7%, 6%, .9) !default;
+$text-base-dark: #fff !default;
+$text-alt-dark: rgba(255, 255, 255, .8) !default;
+$text-alt-2-dark: rgba(255, 255, 255, .6) !default;
+$border-dark: rgba(255, 255, 255, 0.15) !default;
+
+// Shared Colors for Alerts
+$live: #e91916 !default;
+$alert: #e91916 !default;
+$success: #14b866 !default;
+$white: #fff !default;
+$black: #000 !default;
