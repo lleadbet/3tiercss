@@ -1,9 +1,6 @@
-/* A channel brand color, usually dark */
-/* A secondary brand color, usually slightly brighter */
-/* A channel accent color, usually bright */
 /*! Basscss | http://basscss.com | MIT License */
 /* Modified from https://unpkg.com/basscss@8.0.2/css/basscss.min.css */
-@import url("https://fonts.googleapis.com/css?family=Play:400,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Exo:400,700&display=swap");
 html {
   /* Setting the rem unit */
   font-size: 10px;
@@ -1167,8 +1164,8 @@ html {
 
 /* Start: colors */
 :root, .e-theme-light {
-  --c-background-body: #0a2a53;
-  --c-background-base: #105a58;
+  --c-background-body: #091320;
+  --c-background-base: #12233c;
   --c-background-alt: #efeff1;
   --c-background-alt-2: #e4e5e7;
   --c-background-backdrop: rgba(0, 0, 0, 0.6);
@@ -1200,8 +1197,8 @@ body {
 }
 
 a {
-  color: #23e666;
-  fill: #23e666;
+  color: #466c9d;
+  fill: #466c9d;
 }
 
 a:active {
@@ -1243,15 +1240,15 @@ a:active {
 }
 
 .e-c-bg-accent {
-  background-color: #23e666 !important;
+  background-color: #466c9d !important;
 }
 
 .e-c-bg-accent-alt {
-  background-color: #105a58 !important;
+  background-color: #12233c !important;
 }
 
 .e-c-bg-accent-alt-2 {
-  background-color: #23e666 !important;
+  background-color: #466c9d !important;
 }
 
 .e-c-bg-success {
@@ -1259,8 +1256,8 @@ a:active {
 }
 
 .e-c-accent {
-  color: #23e666 !important;
-  fill: #23e666 !important;
+  color: #466c9d !important;
+  fill: #466c9d !important;
 }
 
 .e-c-base {
@@ -1308,12 +1305,12 @@ a:active {
   border: 1px solid transparent;
   background: none;
   cursor: pointer;
-  fill: #23e666;
+  fill: #466c9d;
 }
 
 .e-button {
-  border: 1px solid #23e666;
-  background: #23e666;
+  border: 1px solid #466c9d;
+  background: #466c9d;
   color: #fff;
   fill: #fff;
   min-width: 3rem;
@@ -1333,7 +1330,7 @@ a:active {
 }
 
 .e-button:active, .e-button:focus, .e-iconbutton:focus, .e-iconbutton:active {
-  box-shadow: 0 0 6px 0 #0a2a53;
+  box-shadow: 0 0 6px 0 #091320;
   outline-style: none;
   outline-color: transparent;
 }
@@ -1354,17 +1351,17 @@ a:active {
 }
 
 .e-button--hollow {
-  border: 1px solid #0a2a53;
+  border: 1px solid #091320;
   background: none;
-  color: #0a2a53;
-  fill: #0a2a53;
+  color: #091320;
+  fill: #091320;
 }
 
 .e-button--text {
   background: none;
   border-color: transparent;
-  color: #23e666;
-  fill: #23e666;
+  color: #466c9d;
+  fill: #466c9d;
 }
 
 .e-iconbutton--small {
@@ -1451,11 +1448,11 @@ a:active {
 }
 
 input:checked + .e-switch__slider {
-  background-color: #0a2a53;
+  background-color: #091320;
 }
 
 input:focus + .e-switch__slider {
-  box-shadow: 0 0 1px #0a2a53;
+  box-shadow: 0 0 1px #091320;
 }
 
 input:checked + .e-switch__slider:before {
@@ -1522,25 +1519,23 @@ input:checked + .e-switch__slider:before {
 }
 
 .e-c-bg-brand {
-  background-color: #105a58 !important;
+  background-color: #12233c !important;
 }
 
 .e-c-brand {
-  color: #0a2a53 !important;
-  fill: #0a2a53 !important;
+  color: #091320 !important;
+  fill: #091320 !important;
 }
 
 .e-c-brand-alt {
-  color: #105a58 !important;
-  fill: #105a58 !important;
+  color: #12233c !important;
+  fill: #12233c !important;
 }
 
-/* Start: special font */
 .bold {
-  font-family: "Play", sans-serif;
-  letter-spacing: 1px;
-  font-style: italic;
+  font-family: "Exo", sans-serif;
+  letter-spacing: 2px;
   vertical-align: baseline;
 }
 
-/*# sourceMappingURL=professorbroman.css.map */
+/*# sourceMappingURL=timthetatman.css.map */

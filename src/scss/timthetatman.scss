@@ -1,0 +1,22 @@
+$brand: #091320;
+$brand-alt: #12233c;
+$accent: #466c9d;
+$background-body-light: $brand;
+$background-base-light: $brand-alt;
+$background-backdrop-light: hsla(0, 0, 0, .6);
+$text-base-light: rgba(255, 255, 255, .9);
+$text-alt-light: rgba(255, 255, 255, .6);
+$text-alt-2-light: rgba(255, 255, 255, .5);
+$border-light: rgba(255, 255, 255, 0.1);
+
+@import "partials/base";
+
+@import url('https://fonts.googleapis.com/css?family=Exo:400,700&display=swap');
+
+.bold {
+    font-family: 'Exo', sans-serif;
+    letter-spacing: 2px;
+    vertical-align: baseline;
+}
+
+// override base classes
