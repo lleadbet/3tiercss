@@ -51,7 +51,7 @@ This framework's design principles follow three tiers, described below.
 
 ### Tier 1: Basscsss
 
-This layer, being the easiest, is simply the Basscss framework available for you to use. This framework provides a number of helping classes, so take a peek at the official site for more information: [Basscss](https://basscss.com/)
+This layer, being the easiest, is simply the Basscss framework available for you to use. This framework provides a number of helping classes, so take a look at the official site for more information: [Basscss](https://basscss.com/)
 
 This tier is meant as a start point to build off of, and given the exceptionally small size, high functionality, and ease of use, we felt it a good place to base our changes off of. 
 
@@ -69,6 +69,6 @@ Working off of this, you are able to customize the appearance to a great extent 
 
 ### Examples
 
-For examples, see the demo site: https://lleadbet.github.io/3tiercss/
+For examples, see the demo site: https://lleadbet.github.io/3tiercss/readme.html
 
 The code is available in the `/src/scss` folder for each of the provided examples, as well as compiled in the `/css` output folder. 

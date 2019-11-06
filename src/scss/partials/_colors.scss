@@ -13,7 +13,7 @@ $text-base-light: hsl(220, 7%, 10%) !default;
 $text-alt-light: hsl(220, 7%, 20%) !default;
 $text-alt-2-light: hsl(220, 7%, 44%) !default;
 $border-light: hsl(220, 7%, 86%) !default;
-
+$shadow-light: rgba(0, 0, 0, .1) !default;
 
 // Dark Mode Colors
 $background-body-dark: #000 !default;
@@ -25,6 +25,7 @@ $text-base-dark: #fff !default;
 $text-alt-dark: rgba(255, 255, 255, .8) !default;
 $text-alt-2-dark: rgba(255, 255, 255, .6) !default;
 $border-dark: rgba(255, 255, 255, 0.15) !default;
+$shadow-dark: rgba(255, 255, 255, .1) !default;
 
 // Shared Colors for Alerts
 $live: #e91916 !default;

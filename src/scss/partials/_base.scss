@@ -20,6 +20,7 @@ html {
     --c-text-alt: #{$text-alt-light};
     --c-text-alt-2: #{$text-alt-2-light};
     --c-border: #{$border-light};
+    --c-shadow: #{$shadow-light};
 }
 
 .e-theme-dark {
@@ -32,6 +33,7 @@ html {
     --c-text-alt: #{$text-alt-dark};
     --c-text-alt-2: #{$text-alt-2-dark};
     --c-border: #{$border-dark};
+    --c-shadow: #{$shadow-dark};
 }
 
 body {
@@ -70,6 +72,24 @@ a:active {
     fill: $black !important;
 }
 
+.e-c-bg-brand {
+    background-color: $brand !important;
+}
+
+.e-c-brand {
+    color: $brand !important;
+    fill: $brand !important;
+}
+
+.e-c-bg-brand-alt {
+    background-color: $brand-alt !important;
+}
+
+.e-c-brand-alt {
+    color: $brand-alt !important;
+    fill: $brand-alt !important;
+}
+
 .e-c-bg-base {
     background-color: var(--c-background-base) !important;
 }
@@ -98,10 +118,6 @@ a:active {
     background-color: $accent !important;
 }
 
-.e-c-bg-success {
-    background-color: $success !important;
-}
-
 .e-c-accent {
     color: $accent !important;
     fill: $accent !important;
@@ -120,6 +136,16 @@ a:active {
 .e-c-alt-2 {
     color: var(--c-text-alt-2) !important;
     fill: var(--c-text-alt-2) !important;
+}
+
+.e-c-bg-live{
+    background-color: $live !important;
+}
+.e-c-bg-alert{
+    background-color: $alert !important;
+}
+.e-c-bg-success{
+    background-color: $success !important;
 }
 
 * {
@@ -143,7 +169,7 @@ a:active {
 }
 
 .e-elevation1 {
-    box-shadow: 0 2px 4px -1px rgba(0, 0, 0, .1), 0 2px 2px -2px rgba(0, 0, 0, .02), 0 1px 4px 0 rgba(0, 0, 0, .04)
+    box-shadow: 0 2px 4px -1px var(--c-shadow), 0 2px 2px -2px var(--c-shadow), 0 1px 4px 0 var(--c-shadow)
 }
 
 .e-iconbutton {
@@ -372,18 +398,4 @@ input:checked+.e-switch__slider:before {
 ::-webkit-scrollbar-thumb {
     background: rgba(255, 255, 255, .25);
     border-radius: .5rem;
-}
-
-.e-c-bg-brand {
-    background-color: $brand-alt !important;
-}
-
-.e-c-brand {
-    color: $brand !important;
-    fill: $brand !important;
-}
-
-.e-c-brand-alt {
-    color: $brand-alt !important;
-    fill: $brand-alt !important;
 }

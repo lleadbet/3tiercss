@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <link href="css/generic.css" rel="stylesheet">
+    <link rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.16.2/build/styles/vs2015.min.css">
+    <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.16.2/build/highlight.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', (event) => {
+            document.querySelectorAll('pre code').forEach((block) => {
+              hljs.highlightBlock(block);
+            });
+          });
+
+          function toggleDark(){
+            const main = document.querySelector("#main");
+            
+            main.classList.toggle("e-theme-light");
+            main.classList.toggle("e-theme-dark");
+          };
+    </script>
+
+    <style>
+        :target {
+            content:"";
+            display:block;
+            height:5rem; /* fixed header height*/
+            margin:-5rem 0 0; /* negative fixed header height */
+        }
+        
+        .color-demos{
+            flex-basis: 50%;
+        }
+        
+        .color-swatch{
+            height:7rem;
+            width: 80%;
+        }
+    </style>
+</head>
+
+
+<body id="main" class="fullheight m0 line-height-4 h4 e-theme-light e-c-bg-body">
+    <div id="menu" class="flex e-elevation1 p3 items-center h5 absolute fixed col-12 top-0 right-0 e-c-bg-body">
+        <div class="col-3 bold center"><a class="text-decoration-none" href="https://github.com/lleadbet/3tiercss">3tiercss Github</a></div>
+        <div class="col-3 bold center"><a class="text-decoration-none" href="#classes">Classes</a></div>
+        <div class="col-3 bold center"><a class="text-decoration-none" href="#colors">Colors</a></div>
+        <div class="col-3 center bold e-c-brand">
+            Dark Mode:
+            <label class="e-switch">
+                <input onclick="toggleDark();" id="theme-toggle" type="checkbox"/>
+                <span class="e-switch__slider"></span>
+            </label>
+        </div>
+    </div>
+    <div class="flex m3 mx-auto col-9 flex-column" style="margin-top:7rem;">
+        <h2>3tiercss Documentation</h3>
+        <a id="classes"></a>
+        <h3>Theming an Extension</h4>
+        <p>
+            You can easily theme an extension using the provided classes. We provide a light and dark theme mode, shown off in this page. To use light mode:
+            <pre><code class="plaintext">e-theme-light</code></pre>
+
+            and dark: 
+            <pre><code class="plaintext">e-theme-dark</code></pre>
+
+            All other helper classes leverage this, so it's important to denote what theme your extension is in. This class can also be updated as needed,
+            meaning you can easily update the theme as the user swaps between light and dark modes. 
+        </p>
+
+        <!-- Inputs -->
+        <h3>Inputs</h3> 
+        <div class="clearfix e-border-bottom">
+            <p class="col col-6 center">
+                <button class="e-button">Button</button>
+            </p>
+            <pre class="col col-6"><code class="html">&lt;button class="e-button"&gt;Button&lt;/button&gt;</code></pre>
+        </div>
+
+        <div class="clearfix e-border-bottom">
+            <p class="col col-6 center">
+                <button class="e-button e-button--hollow">Button</button>
+            </p>
+            <pre class="col col-6"><code class="html">&lt;button class="e-button e-button--hollow"&gt;Button&lt;/button&gt;</code></pre>
+        </div>
+
+        
+        <div class="clearfix e-border-bottom">
+            <p class="col col-6 center">
+                <button class="e-button e-button--small">Button</button>
+            </p>
+            <pre class="col col-6"><code class="html">&lt;button class="e-button e-button--small"&gt;Button&lt;/button&gt;</code></pre>
+        </div>
+
+        <div class="clearfix e-border-bottom">
+            <p class="col col-6 center">
+                <button class="e-button rounded">Button</button>
+            </p>
+            <pre class="col col-6"><code class="html">&lt;button class="e-button rounded"&gt;Button&lt;/button&gt;</code></pre>
+        </div>
+
+        <div class="clearfix e-border-bottom">
+            <p class="col col-6 center">
+                <button class="e-iconbutton"><svg width="20px" height="20px" version="1.1" viewBox="0 0 20 20" x="0px" y="0px"><path d="M10 2c1.93 0 3.5 1.57 3.5 3.5S11.93 9 10 9 6.5 7.43 6.5 5.5 8.07 2 10 2zm6.447 10.105c.34.17.553.516.553.896v4a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1v-4c0-.38.214-.726.552-.896.091-.045 2.26-1.104 6.448-1.104 4.187 0 6.357 1.06 6.447 1.104z" fill-rule="evenodd"></path></svg></button>
+            </p>
+            <pre class="col col-6"><code class="html">&lt;button class="e-iconbutton"&gt;&lt;svg width="20px" height="20px" version="1.1" viewBox="0 0 20 20" x="0px" y="0px"&gt;&lt;path d="M10 2c1.93 0 3.5 1.57 3.5 3.5S11.93 9 10 9 6.5 7.43 6.5 5.5 8.07 2 10 2zm6.447 10.105c.34.17.553.516.553.896v4a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1v-4c0-.38.214-.726.552-.896.091-.045 2.26-1.104 6.448-1.104 4.187 0 6.357 1.06 6.447 1.104z" fill-rule="evenodd"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/button&gt;</code></pre>         
+        </div>
+        
+        <div class="clearfix e-border-bottom">
+            <p class="col col-6 center">
+                <label class="e-switch">
+                    <input type="checkbox"/>
+                    <span class="e-switch__slider"></span>
+                </label>
+            </p>
+                <pre class="col col-6"><code class="html">&lt;label class="e-switch"&gt;
+    &lt;input type="checkbox"/&gt;
+    &lt;span class="e-switch__slider"&gt;&lt;/span&gt;
+&lt;/label&gt;</code></pre>
+        </div>
+
+        <!-- Cursor styling -->
+        <h3>Cursors</h3> 
+        <div class="clearfix e-border-bottom">
+            <p class="col col-6 center e-cursor--pointer pl2 pr2">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui facilis laborum excepturi sequi veniam quis. Laboriosam repellendus fugiat dolorem provident! Esse inventore magni quo sed. Similique fugiat non corrupti explicabo!
+            </p>
+            <pre class="col col-6"><code class="html">&lt;p class="e-cursor--pointer"&gt;
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui facilis laborum excepturi sequi veniam quis. Laboriosam repellendus fugiat dolorem provident! Esse inventore magni quo sed. Similique fugiat non corrupti explicabo!
+&lt;/p&gt;</code></pre>
+        </div>
+        <div class="clearfix e-border-bottom">
+            <p class="col col-6 center e-cursor--not-allowed pl2 pr2">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui facilis laborum excepturi sequi veniam quis. Laboriosam repellendus fugiat dolorem provident! Esse inventore magni quo sed. Similique fugiat non corrupti explicabo!
+            </p>
+            <pre class="col col-6"><code class="html">&lt;p class="e-cursor--not-allowed"&gt;
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui facilis laborum excepturi sequi veniam quis. Laboriosam repellendus fugiat dolorem provident! Esse inventore magni quo sed. Similique fugiat non corrupti explicabo!
+&lt;/p&gt;</code></pre>
+        </div>
+
+
+        <!-- Colors! -->
+        <a id="colors"></a>
+        <h3>Colors</h4>
+        <p>
+            We provide a suite of default colors that are a good start point for your extension.
+        </p>
+        <p>
+            Static Colors
+        </p>
+        <div class="flex e-border-bottom">
+            <div class="color-demos">
+                <div class="e-c-bg-black color-swatch mx-auto"> </div>
+            </div>
+            <pre class="color-demos"><code class="scss">$black</code></pre>         
+        </div>
+
+        <div class="flex e-border-bottom">
+            <div class="color-demos">
+                <div class="e-c-bg-white color-swatch mx-auto"> </div>
+            </div>
+            <pre class="color-demos"><code class="scss">$white</code></pre>         
+        </div>
+        
+        <div class="flex e-border-bottom">
+            <div class="color-demos">
+                <div class="e-c-bg-brand color-swatch mx-auto"> </div>
+            </div>
+            <pre class="color-demos"><code class="scss">$brand</code></pre>         
+        </div>
+
+
+        <div class="flex e-border-bottom">
+            <div class="color-demos">
+                <div class="e-c-bg-brand-alt color-swatch mx-auto"> </div>
+            </div>
+            <pre class="color-demos"><code class="scss">$brand-alt</code></pre>         
+        </div>
+        
+        <div class="flex e-border-bottom">
+            <div class="color-demos">
+                <div class="e-c-bg-accent color-swatch mx-auto"> </div>
+            </div>
+            <pre class="color-demos"><code class="scss">$accent</code></pre>         
+        </div>
+
+        <div class="flex e-border-bottom">
+            <div class="color-demos">
+                <div class="e-c-bg-live color-swatch mx-auto"> </div>
+            </div>
+            <pre class="color-demos"><code class="scss">$live</code></pre>         
+        </div>
+
+        <div class="flex e-border-bottom">
+            <div class="color-demos">
+                <div class="e-c-bg-alert color-swatch mx-auto"> </div>
+            </div>
+            <pre class="color-demos"><code class="scss">$alert</code></pre>         
+        </div>
+
+        <div class="flex e-border-bottom">
+            <div class="color-demos">
+                <div class="e-c-bg-success color-swatch mx-auto"> </div>
+            </div>
+            <pre class="color-demos"><code class="scss">$success</code></pre>         
+        </div>
+
+
+        <p>
+            Dynamic Colors (change based on theme)
+        </p>
+        <div class="flex e-border-bottom">
+            <div class="color-demos">
+                <div class="e-c-bg-body color-swatch mx-auto e-border"> </div>
+            </div>
+            <pre class="color-demos"><code class="scss">$background-body-{theme}</code></pre>         
+        </div>
+
+        <div class="flex e-border-bottom">
+            <div class="color-demos">
+                <div class="e-c-bg-base color-swatch mx-auto"> </div>
+            </div>
+            <pre class="color-demos"><code class="scss">$background-base-{theme}</code></pre>         
+        </div>
+
+        <div class="flex e-border-bottom">
+            <div class="color-demos">
+                <div class="e-c-bg-alt color-swatch mx-auto"> </div>
+            </div>
+            <pre class="color-demos"><code class="scss">$background-alt-{theme}</code></pre>         
+        </div>
+
+        <div class="flex e-border-bottom">
+            <div class="color-demos">
+                <div class="e-c-bg-alt-2 color-swatch mx-auto"> </div>
+            </div>
+            <pre class="color-demos"><code class="scss">$background-alt-2-{theme}</code></pre>         
+        </div>
+
+        <div class="flex e-border-bottom">
+            <div class="color-demos">
+                <div class="e-backdrop color-swatch mx-auto"> </div>
+            </div>
+            <pre class="color-demos"><code class="scss">$background-backdrop-{theme}</code></pre>         
+        </div>
+    
+        <div class="flex e-border-bottom">
+            <div class="color-demos">
+                <div class="color-swatch mx-auto" style="background-color: var(--c-text-base);"> </div>
+            </div>
+            <pre class="color-demos"><code class="scss">$text-base-{theme}</code></pre>         
+        </div>
+
+        <div class="flex e-border-bottom">
+            <div class="color-demos">
+                <div class="color-swatch mx-auto"  style="background-color: var(--c-text-alt);"> </div>
+            </div>
+            <pre class="color-demos"><code class="scss">$text-alt-{theme}</code></pre>         
+        </div>
+
+        <div class="flex e-border-bottom">
+            <div class="color-demos">
+                <div class="color-swatch mx-auto"  style="background-color: var(--c-text-alt-2);"> </div>
+            </div>
+            <pre class="color-demos"><code class="scss">$text-alt-2-{theme}</code></pre>         
+        </div>
+
+        <div class="flex e-border-bottom">
+            <div class="color-demos">
+                <div class="color-swatch mx-auto"  style="background-color: var(--c-border);"> </div>
+            </div>
+            <pre class="color-demos"><code class="scss">$border-{theme}</code></pre>         
+        </div>
+
+        <div class="flex e-border-bottom">
+            <div class="color-demos">
+                <div class="color-swatch mx-auto"  style="background-color: var(--c-shadow);"> </div>
+            </div>
+            <pre class="color-demos"><code class="scss">$shadow-{theme}</code></pre>         
+        </div>
+
+    </div>     
+</body>
+</html>
